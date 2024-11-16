@@ -112,7 +112,7 @@ background-color: rgb(212, 173, 173);
 .food .container .info-for-resturant{
     width: 100%;
     height: 500px;
-    background-image: url("/img/img-rest/images.jpg");
+    background-image: url("img/img-rest/images.jpg");
     background-size: cover;
 }
 
@@ -183,7 +183,7 @@ background-color: rgb(212, 173, 173);
 /* end food */
 /* str clothes */
  .cclothes{
-  background-image: url("../img/img-clothes/home.jpg");
+  background-image: url("img/img-clothes/home.jpg");
   background-size: cover;
   height: 500px;
   width: 100%;
