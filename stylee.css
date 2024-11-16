@@ -197,12 +197,13 @@ background-color: rgb(212, 173, 173);
 }
 @media (min-width:60px) {
 
-    .rest-clothes{
+    .rest-clothes,
+    .rest{
 
-        display: flex;
+        display: flex !important;
 
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
 
     }
 }
