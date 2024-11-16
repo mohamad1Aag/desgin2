@@ -1,0 +1,270 @@
+
+
+ul,
+li{
+    text-decoration: none;
+    list-style: none;
+    text-align: none;
+
+}
+
+a{
+    text-decoration: none;
+    text-align: none;
+    color:black;
+}
+@media(min-width:300px){
+.navbarsmall-nav{
+        display: flex;
+    flex-direction: column;
+
+    list-style: none;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+}
+/* str landing */
+.landing{
+background-color: rgb(212, 173, 173);
+    height: calc(100vh );
+}
+
+.landing .info{
+    background-color: rgba(226, 204, 202,25%);
+}
+
+
+/* end landing */
+/* str food */
+
+
+ .main-title h2{
+  position: relative;
+    border: 1px solid black;
+    border-radius: 15% ;
+    background-color: rgb(194, 214, 207);
+}
+ .main-title h2::before{
+    content: "";
+    position: absolute;
+    left: -30% ;
+    top: 30%;
+    transform: translatey(50%);
+
+    transform: translateX(-40%);
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+
+
+}
+ .main-title h2:hover::before{
+    content: "";
+    position: absolute;
+    left: 10px ;
+    top: 30%;
+    transform: translatey(50%);
+
+    transform: translateX(-40%);
+    background-color: rgb(194, 214, 207);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+
+
+}
+ .main-title h2::after{
+    content: "";
+    position: absolute;
+    right:  -30% ;
+    top: 30%;
+    transform: translatey(50%);
+
+    transform: translateX(-40%);
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}
+
+ .main-title h2:hover::after{
+    content: "";
+    position: absolute;
+    right:  0% ;
+    top: 30%;
+    transform: translatey(50%);
+
+    transform: translateX(-40%);
+    background-color: rgb(194, 214, 207);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+
+.food .container .info-for-resturant{
+    width: 100%;
+    height: 500px;
+    background-image: url("/img/img-rest/images.jpg");
+    background-size: cover;
+}
+
+
+@media (min-width:60px) {
+
+    .rest{
+
+        display: flex;
+
+        flex-direction: row;
+
+    }
+}
+@media (max-width:600px) {
+
+    .rest{
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+}
+/* .food .container .rest .card{
+    position: relative;
+    z-index: 1;
+}
+.food .container .rest .card:hover::before{
+    content: "";
+    position: absolute;
+    right: 2000%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0s;
+
+    background-color: rgb(0,0,0, 75%);
+    
+
+}
+.food .container .rest .card::before{
+    content: "";
+    position: absolute;
+    right: 0%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+
+    background-color: rgb(0,0,0, 75%);
+
+} */
+
+
+
+
+.container .rest .card:hover{
+    background-color: rgb(82, 95, 95);
+    border-radius: 20% 20%;
+    transition: 1s;
+    border: 3px solid rgb(51, 153, 93);
+ transform: rotate(360deg)  scale(1.1);
+ color: aqua;
+
+}
+
+/* end food */
+/* str clothes */
+ .cclothes{
+  background-image: url("../img/img-clothes/home.jpg");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+
+}
+.clothes .container .rest-clothes .card-clothes{
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 10px;
+    overflow: hidden;
+}
+@media (min-width:60px) {
+
+    .rest-clothes{
+
+        display: flex;
+
+        flex-direction: row;
+
+    }
+}
+@media (max-width:600px) {
+
+    .rest-clothes{
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+}
+.clothes .container .rest-clothes .card-clothes:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: rgb(110, 108, 134);
+
+
+}
+
+/* end clothes */
+/* str contact */
+
+.contact .container input[type="text"]{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(196, 212, 212);
+    color:black;
+    border: 5px solid salmon;
+
+}
+.fa-facebook,
+.fa-twitter,
+  .fa-instagram,
+  .fa-telegram{
+    width: 50px;
+    height: 50px;
+    color: royalblue;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+  .fa-instagram:hover,
+  .fa-telegram:hover{
+    width: 50px;
+    height: 50px;
+    color: red;
+}
+
+
+/* end contact */
+/* sign in */
+
+.signin .container form input{
+    width: 500px;
+    border: 2px dashed black;
+    color: red;
+
+}
+.signin .container form button{
+    width: 100px;
+    border: 2px dashed black;
+    color: red;
+
+}
+/* sign in */

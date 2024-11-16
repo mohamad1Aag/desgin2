@@ -1,0 +1,88 @@
+*{
+
+}
+a,
+ul{
+    text-decoration: none;
+text-align: none;
+}
+.land{
+    background-image: url("../img/img-kfc/download.jpg");
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 68px);
+}
+.land .info{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    
+
+}
+
+.gallary .container .row a::before {
+content: "hover on meal";
+color: red;
+    position: absolute;
+    background-color: rgba(0, 0, 0 , 10%);
+    width: 50%;
+    height: 100%;
+    
+}
+.gallary .container .row a:hover::before  {
+
+     content: "Five pieces of chicken with fries and a cola for 5euros";
+    position: absolute;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    border-radius: 50%;
+    height: 40%;
+    width: 50%;
+    transform: translateX(50%);
+    transform: translatey(0%);
+
+
+    transition: 1.5s;
+    
+}
+
+.gallary .container .row a::after {
+    content: "";
+    color: red;
+        position: absolute;
+        background-color: rgba(0, 0, 0 , 10%);
+        width: 33%;
+        height: 100%;
+        right: 31px;
+        top: 0;
+
+        
+    }
+    .gallary .container .row a:hover::after  {
+    
+        content: "";
+        position: absolute;
+        right: 31px;
+        top: 0;
+    
+        color: rgb(0, 0, 0);
+        width: fit-content;
+        height: 0%;
+        width: 33%;
+        transform: translateX(50%);
+        transform: translatey(-1%);
+    
+        background-color: rgba(177, 180, 27, 0.5);
+    
+        transition: 1s;
+        
+    }
